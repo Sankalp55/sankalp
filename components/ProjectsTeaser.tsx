@@ -34,8 +34,8 @@ export default function ProjectsTeaser() {
           meta="Visual Workflow Builder · 2026"
           blurb="A visual workflow builder. Drag nodes onto an infinite canvas, connect their ports with cables, hit run, watch the graph light up in topological order. Proves hard product UI — graph manipulation, real time state, drag and drop — without a graph library."
           stack={["Next.js", "TypeScript", "Zustand", "SVG", "Web Audio"]}
-          embedUrl="http://localhost:3002"
-          embedHost="wire.local"
+          embedUrl="https://wire-drab.vercel.app"
+          embedHost="wire-drab.vercel.app"
         />
       </div>
     </section>

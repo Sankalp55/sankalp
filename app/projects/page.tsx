@@ -43,9 +43,9 @@ export default function ProjectsPage() {
             meta="Visual Workflow Builder · 2026"
             blurb="WIRE is a visual workflow and automation builder. An infinite canvas you pan and zoom, six node types you drag from the palette, cables you draw port to port. Hit run and watch the wavefront sweep left to right, branching at fan outs, settling on a charged baseline. Two themes share one token contract. No graph library — every cable is a hand drawn SVG cubic Bezier, every interaction is plain pointer events."
             stack={["Next.js", "TypeScript", "Zustand", "SVG", "Web Audio"]}
-            embedUrl="http://localhost:3002"
-            embedHost="wire.local"
-            liveUrl="http://localhost:3002"
+            embedUrl="https://wire-drab.vercel.app"
+            embedHost="wire-drab.vercel.app"
+            liveUrl="https://wire-drab.vercel.app"
             detailCta
           />
         </div>

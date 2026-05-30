@@ -22,8 +22,8 @@ export default function ProjectsTeaser() {
           meta="Gen Z Drink Drop Site · 2026"
           blurb="A fictional functional energy drink brand. A cinematic single page commerce experience — pinned hero, scroll driven flavor flythrough, full cart and a real 3 step checkout. Wired to Supabase for auth, orders and the mailing list."
           stack={["Next.js", "TypeScript", "Framer Motion", "GSAP", "Lenis", "Zustand", "Supabase"]}
-          embedUrl="http://localhost:3000"
-          embedHost="pulse.local"
+          embedUrl="https://pulse-beta-self.vercel.app"
+          embedHost="pulse-beta-self.vercel.app"
         />
         <ProjectArticle
           teaser

@@ -30,9 +30,9 @@ export default function ProjectsPage() {
             meta="Gen Z Drink Drop Site · 2026"
             blurb="PULSE is a fictional Gen Z functional energy drink brand told as a single long scroll story. A pinned cinematic hero, JS lerped color flood per flavor, a 400vh pinned product flythrough, a working cart drawer and a fully inline 3 step checkout. Auth, orders and the mailing list are wired to Supabase with row level security."
             stack={["Next.js", "TypeScript", "Framer Motion", "GSAP", "Lenis", "Zustand", "Supabase"]}
-            embedUrl="http://localhost:3000"
-            embedHost="pulse.local"
-            liveUrl="http://localhost:3000"
+            embedUrl="https://pulse-beta-self.vercel.app"
+            embedHost="pulse-beta-self.vercel.app"
+            liveUrl="https://pulse-beta-self.vercel.app"
             detailCta
           />
           <ProjectArticle

@@ -29,15 +29,13 @@ export default function ProjectsTeaser() {
           teaser
           flip
           index="(02)"
-          phLabel="WSA — screenshot"
-          name={
-            <>
-              <span className="outline">SAFETY</span> ANALYTICS
-            </>
-          }
-          meta="Geospatial Crime Data System · 2025"
-          blurb="A geospatial system that turns crime data into actionable safety insight for women — mapping risk across space and time with a Python data pipeline."
-          stack={["Python", "Pandas", "NumPy", "OpenCV"]}
+          phLabel="WIRE — live"
+          name="WIRE"
+          meta="Visual Workflow Builder · 2026"
+          blurb="A visual workflow builder. Drag nodes onto an infinite canvas, connect their ports with cables, hit run, watch the graph light up in topological order. Proves hard product UI — graph manipulation, real time state, drag and drop — without a graph library."
+          stack={["Next.js", "TypeScript", "Zustand", "SVG", "Web Audio"]}
+          embedUrl="http://localhost:3002"
+          embedHost="wire.local"
         />
       </div>
     </section>

@@ -38,15 +38,14 @@ export default function ProjectsPage() {
           <ProjectArticle
             flip
             index="(02)"
-            phLabel="WSA — screenshot"
-            name={
-              <>
-                <span className="outline">WOMEN&apos;S</span> SAFETY ANALYTICS
-              </>
-            }
-            meta="Geospatial Crime Data System · 2025"
-            blurb="A geospatial analytics system that reads crime data and maps risk for women across space and time. A Python pipeline cleans and models the data with Pandas and NumPy, while OpenCV powers the visual processing layer that turns raw numbers into readable maps."
-            stack={["Python", "Pandas", "NumPy", "OpenCV"]}
+            phLabel="WIRE — live"
+            name="WIRE"
+            meta="Visual Workflow Builder · 2026"
+            blurb="WIRE is a visual workflow and automation builder. An infinite canvas you pan and zoom, six node types you drag from the palette, cables you draw port to port. Hit run and watch the wavefront sweep left to right, branching at fan outs, settling on a charged baseline. Two themes share one token contract. No graph library — every cable is a hand drawn SVG cubic Bezier, every interaction is plain pointer events."
+            stack={["Next.js", "TypeScript", "Zustand", "SVG", "Web Audio"]}
+            embedUrl="http://localhost:3002"
+            embedHost="wire.local"
+            liveUrl="http://localhost:3002"
             detailCta
           />
         </div>

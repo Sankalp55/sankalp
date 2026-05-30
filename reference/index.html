@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sankalp Tyagi — Frontend Focused Full Stack Developer</title>
+<meta name="description" content="Sankalp Tyagi builds expressive interfaces with React, Next.js and Framer Motion. UI engineering and interaction quality, obsessed over." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- grain -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- custom cursor -->
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="cursor-label" aria-hidden="true"></div>
+
+<!-- page transition wipe -->
+<div class="wipe" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+<div class="wipe-label" aria-hidden="true"></div>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <a class="nav-brand magnetic" data-strength="0.25" href="#" data-view="home" data-cursor="Top">
+    <span class="dot"></span><span class="full">SANKALP TYAGI</span>
+  </a>
+  <div class="nav-links">
+    <a class="nav-link" href="#" data-view="home"><span class="idx">01</span>Home</a>
+    <a class="nav-link" href="#" data-view="projects"><span class="idx">02</span>Projects</a>
+    <a class="nav-link" href="#" data-view="about"><span class="idx">03</span>About</a>
+  </div>
+</nav>
+
+<!-- ===================== HOME ===================== -->
+<main id="view-home" class="view active" data-screen-label="Home">
+
+  <!-- HERO -->
+  <section class="hero" data-screen-label="Hero">
+    <canvas id="gl"></canvas>
+    <div class="hero-top">
+      <div>FRONTEND FOCUSED<br />FULL STACK DEVELOPER</div>
+      <div class="r">BASED IN INDIA<br />AVAILABLE 2026</div>
+    </div>
+    <div class="hero-grid">
+      <h1 class="hero-title">
+        <span class="line"><span>SANKALP</span></span>
+        <span class="line"><span class="outline">TYAGI</span></span>
+        <span class="line"><span>BUILDS <em>UI.</em></span></span>
+      </h1>
+    </div>
+    <p class="hero-sub">
+      I engineer interfaces where motion, detail and performance meet. React, Next.js and Framer Motion are my instruments — interaction quality is the point, not the afterthought.
+    </p>
+    <div class="hero-cta">
+      <a class="btn solid magnetic" data-strength="0.45" href="#" data-cursor="View" data-scroll="#projects-teaser"><span class="t">See the work</span></a>
+      <a class="btn magnetic" data-strength="0.45" href="https://www.linkedin.com/in/sankalp-tyagi-173844265/" target="_blank" rel="noopener" data-cursor="Open"><span class="t">LinkedIn</span><span class="arrow"></span></a>
+    </div>
+    <div class="scroll-cue"><span>SCROLL</span><span class="bar"></span></div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" data-speed="0.7" data-dir="fwd">
+    <div class="marquee-track">
+      <span class="marquee-item">REACT <span class="star">✦</span></span>
+      <span class="marquee-item fill">NEXT.JS <span class="star">✦</span></span>
+      <span class="marquee-item">FRAMER MOTION <span class="star">✦</span></span>
+      <span class="marquee-item fill">TYPESCRIPT <span class="star">✦</span></span>
+      <span class="marquee-item">INTERACTION DESIGN <span class="star">✦</span></span>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <section class="shell section-pad" id="experience" data-screen-label="Experience">
+    <div class="exp-head">
+      <div data-reveal>
+        <div class="reveal-line"><span class="kicker">02 — Experience</span></div>
+      </div>
+      <h2 class="big-head" data-split>Where I have <em>shipped.</em></h2>
+    </div>
+
+    <div class="exp-list">
+      <div class="exp-row" data-fade>
+        <div class="exp-when">2025 — Present<br />Internship</div>
+        <div>
+          <div class="exp-role">Frontend Developer <span class="at">@ Sneads</span></div>
+          <div class="exp-tags">
+            <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Framer Motion</span><span class="tag">API Integration</span>
+          </div>
+        </div>
+        <p class="exp-desc">Built production interfaces with React and Next.js, wired live data through API integration, and brought screens to life with Framer Motion. Focused on responsiveness, accessibility and the small details that make a product feel considered.</p>
+      </div>
+    </div>
+
+    <!-- STATS / counters -->
+    <div class="stats">
+      <div class="stat" data-fade><div class="num"><span data-count="40" data-suffix="+">0</span></div><div class="lab">Components shipped to production</div></div>
+      <div class="stat" data-fade="0.08"><div class="num"><span data-count="60" data-suffix="fps">0</span></div><div class="lab">Animation target, held under load</div></div>
+      <div class="stat" data-fade="0.16"><div class="num"><span data-count="3">0</span></div><div class="lab">Core projects, end to end</div></div>
+      <div class="stat" data-fade="0.24"><div class="num"><span data-count="100" data-suffix="%">0</span></div><div class="lab">Responsive, mobile to desktop</div></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS TEASER -->
+  <section class="shell section-pad" id="projects-teaser" data-screen-label="Selected work">
+    <div class="exp-head">
+      <h2 class="big-head" data-split>Selected <em>work.</em></h2>
+      <a class="btn magnetic" data-strength="0.4" href="#" data-view="projects" data-cursor="All"><span class="t">All projects</span><span class="arrow"></span></a>
+    </div>
+
+    <div class="proj-list">
+      <!-- AETHER -->
+      <article class="proj" data-parallax-scope data-cursor="Open" data-view="projects" role="link" tabindex="0">
+        <div class="proj-media" data-clip>
+          <span class="proj-idx">(01)</span>
+          <div class="ph" data-parallax="6"><span class="ph-tag">AETHER — screenshot</span></div>
+          <div class="scrim"></div>
+        </div>
+        <div class="proj-info">
+          <h3 class="proj-name" data-split>AETHER</h3>
+          <div class="proj-meta" data-fade>Django Microblogging Platform · 2025</div>
+          <p class="proj-blurb" data-fade="0.05">A full microblogging platform — posting, feeds, and accounts — built on Django with server rendered views and a clean component driven front end.</p>
+          <div class="proj-stack" data-fade="0.1">
+            <span class="tag">Django</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Bootstrap 5</span><span class="tag">SQLite</span><span class="tag">Git</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- WSA -->
+      <article class="proj flip" data-parallax-scope data-cursor="Open" data-view="projects" role="link" tabindex="0">
+        <div class="proj-media" data-clip>
+          <span class="proj-idx">(02)</span>
+          <div class="ph" data-parallax="6"><span class="ph-tag">WSA — screenshot</span></div>
+          <div class="scrim"></div>
+        </div>
+        <div class="proj-info">
+          <h3 class="proj-name" data-split><span class="outline">SAFETY</span> ANALYTICS</h3>
+          <div class="proj-meta" data-fade>Geospatial Crime Data System · 2025</div>
+          <p class="proj-blurb" data-fade="0.05">A geospatial system that turns crime data into actionable safety insight for women — mapping risk across space and time with a Python data pipeline.</p>
+          <div class="proj-stack" data-fade="0.1">
+            <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">OpenCV</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact shell section-pad" id="contact" data-screen-label="Contact">
+    <div data-reveal><div class="reveal-line"><span class="kicker">04 — Contact</span></div></div>
+    <h2 class="contact-head" data-split>Let us build something.</h2>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-block" data-fade>
+          <div class="l">Phone</div>
+          <a class="b magnetic" data-strength="0.2" href="tel:+919068499273" data-cursor="Call">+91 90684 99273</a>
+        </div>
+        <div class="contact-block" data-fade="0.06">
+          <div class="l">LinkedIn</div>
+          <a class="b magnetic" data-strength="0.2" href="https://www.linkedin.com/in/sankalp-tyagi-173844265/" target="_blank" rel="noopener" data-cursor="Open">in/sankalp-tyagi</a>
+        </div>
+        <div class="contact-block" data-fade="0.12">
+          <div class="l">Availability</div>
+          <div class="b">Open to frontend roles, 2026</div>
+        </div>
+      </div>
+
+      <form class="form" id="contact-form" novalidate data-fade>
+        <div class="field" data-validate>
+          <label>Your name</label>
+          <input type="text" data-validate="text" placeholder="Jane Doe" autocomplete="name" />
+          <div class="msg"></div>
+        </div>
+        <div class="field" data-validate>
+          <label>Email</label>
+          <input type="email" data-validate="email" placeholder="jane@studio.com" autocomplete="email" />
+          <div class="msg"></div>
+        </div>
+        <div class="field" data-validate>
+          <label>Message</label>
+          <textarea rows="3" data-validate="text" placeholder="Tell me about the project."></textarea>
+          <div class="msg"></div>
+        </div>
+        <button type="submit" class="form-submit magnetic" data-strength="0.4" data-cursor="Send"><span class="t">Send message</span></button>
+        <div class="form-ok" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 Sankalp Tyagi</span>
+    <span>Frontend Focused Full Stack Developer</span>
+    <a href="https://www.linkedin.com/in/sankalp-tyagi-173844265/" target="_blank" rel="noopener" data-cursor="Open">LinkedIn ↗</a>
+  </footer>
+</main>
+
+<!-- ===================== PROJECTS ===================== -->
+<div id="view-projects" class="view" data-screen-label="Projects view">
+  <section class="shell" style="padding-top: clamp(140px, 18vh, 240px);" data-screen-label="Projects header">
+    <div data-reveal><div class="reveal-line"><span class="kicker">02 — Projects</span></div></div>
+    <h1 class="big-head" data-split>Things I have <em>made.</em></h1>
+  </section>
+
+  <section class="shell section-pad">
+    <div class="proj-list">
+      <!-- AETHER full -->
+      <article class="proj" data-parallax-scope data-screen-label="AETHER">
+        <div class="proj-media" data-clip>
+          <span class="proj-idx">(01)</span>
+          <div class="ph" data-parallax="6"><span class="ph-tag">AETHER — screenshot</span></div>
+          <div class="scrim"></div>
+        </div>
+        <div class="proj-info">
+          <h2 class="proj-name" data-split>AETHER</h2>
+          <div class="proj-meta" data-fade>Django Microblogging Platform · 2025</div>
+          <p class="proj-blurb" data-fade="0.05">AETHER is a complete microblogging platform — users post, browse a live feed, and manage accounts. Built on Django with server rendered views, a SQLite store and a responsive Bootstrap 5 front end, version controlled end to end with Git.</p>
+          <div class="proj-stack" data-fade="0.1">
+            <span class="tag">Django</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Bootstrap 5</span><span class="tag">SQLite</span><span class="tag">Git</span>
+          </div>
+          <div class="proj-cta" data-fade="0.15">
+            <a class="btn magnetic" data-strength="0.4" href="#" data-cursor="Soon"><span class="t">Case study soon</span><span class="arrow"></span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- WSA full -->
+      <article class="proj flip" data-parallax-scope data-screen-label="Womens Safety Analytics">
+        <div class="proj-media" data-clip>
+          <span class="proj-idx">(02)</span>
+          <div class="ph" data-parallax="6"><span class="ph-tag">WSA — screenshot</span></div>
+          <div class="scrim"></div>
+        </div>
+        <div class="proj-info">
+          <h2 class="proj-name" data-split><span class="outline">WOMEN'S</span> SAFETY ANALYTICS</h2>
+          <div class="proj-meta" data-fade>Geospatial Crime Data System · 2025</div>
+          <p class="proj-blurb" data-fade="0.05">A geospatial analytics system that reads crime data and maps risk for women across space and time. A Python pipeline cleans and models the data with Pandas and NumPy, while OpenCV powers the visual processing layer that turns raw numbers into readable maps.</p>
+          <div class="proj-stack" data-fade="0.1">
+            <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">OpenCV</span>
+          </div>
+          <div class="proj-cta" data-fade="0.15">
+            <a class="btn magnetic" data-strength="0.4" href="#" data-cursor="Soon"><span class="t">Case study soon</span><span class="arrow"></span></a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="shell section-pad" style="text-align:center;">
+    <h2 class="big-head" data-split style="margin-inline:auto;">Want the <em>full</em> story?</h2>
+    <div style="margin-top:40px; display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+      <a class="btn solid magnetic" data-strength="0.4" href="#" data-view="home" data-anchor="#contact" data-cursor="Talk"><span class="t">Get in touch</span></a>
+      <a class="btn magnetic" data-strength="0.4" href="#" data-view="about" data-cursor="About"><span class="t">More about me</span><span class="arrow"></span></a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 Sankalp Tyagi</span>
+    <a href="#" data-view="home" data-cursor="Top">Back home ↑</a>
+  </footer>
+</div>
+
+<!-- ===================== ABOUT ===================== -->
+<div id="view-about" class="view" data-screen-label="About view">
+  <section class="shell" style="padding-top: clamp(140px, 18vh, 240px);" data-screen-label="About header">
+    <div data-reveal><div class="reveal-line"><span class="kicker">03 — About</span></div></div>
+    <p class="about-lead" data-split>I make interfaces that <em>feel</em> as good as they look.</p>
+  </section>
+
+  <section class="shell section-pad">
+    <div class="about-grid">
+      <div class="portrait" data-clip>
+        <div class="ph"><span class="ph-tag">Portrait — photo</span></div>
+      </div>
+      <div class="about-body">
+        <p data-fade><strong>I am Sankalp Tyagi, a frontend focused full stack developer.</strong> My work lives at the intersection of engineering and craft — I care about how a button responds under your finger as much as how the data flows behind it.</p>
+        <p data-fade="0.06">Right now I am a frontend developer at <strong>Sneads</strong>, building production interfaces with React and Next.js, integrating live APIs, and choreographing motion with Framer Motion. I am happiest when a screen goes from functional to delightful.</p>
+        <p data-fade="0.12">Beyond the front end, I build full systems — from a Django microblogging platform to a Python powered geospatial analytics tool. I like understanding the whole stack so the surface can be exactly right.</p>
+
+        <div class="skills" style="margin-top:36px;">
+          <div class="skill-row" data-fade><span class="n">React / Next.js</span><span class="v">DAILY DRIVER</span></div>
+          <div class="skill-row" data-fade="0.04"><span class="n">Framer Motion / GSAP</span><span class="v">MOTION</span></div>
+          <div class="skill-row" data-fade="0.08"><span class="n">TypeScript</span><span class="v">FLUENT</span></div>
+          <div class="skill-row" data-fade="0.12"><span class="n">Python / Django</span><span class="v">BACKEND</span></div>
+          <div class="skill-row" data-fade="0.16"><span class="n">Pandas / NumPy / OpenCV</span><span class="v">DATA</span></div>
+        </div>
+
+        <div style="margin-top:40px; display:flex; gap:14px; flex-wrap:wrap;">
+          <a class="btn solid magnetic" data-strength="0.4" href="#" data-view="home" data-anchor="#contact" data-cursor="Talk"><span class="t">Work with me</span></a>
+          <a class="btn magnetic" data-strength="0.4" href="https://www.linkedin.com/in/sankalp-tyagi-173844265/" target="_blank" rel="noopener" data-cursor="Open"><span class="t">LinkedIn</span><span class="arrow"></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 Sankalp Tyagi</span>
+    <a href="#" data-view="home" data-cursor="Top">Back home ↑</a>
+  </footer>
+</div>
+
+<!-- ===================== SCRIPTS ===================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="js/shader.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
